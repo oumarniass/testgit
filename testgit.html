@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Title</title>
+   <link rel="stylesheet" href="Css/stybon.css">
 </head>
 <body>
-    bonjou faye
+<center>
+<h1> Space Invaders | Vitesse deplacement Ennemis : <span id="inter"></span> ms</h1>
+</center>
+<div id="container"> 
+<div id="levelDiv">
+    <h2>Level :</h2>
+    <span id="level"></span>
+
+</div>
+<div id="scoreDiv">
+    <h2>Score :</h2>
+    <span id="score"></span>
+
+</div>
+<div id="alivesDiv">
+    <h2>Aliens Restants Aliens Restants Aliens Restants Aliens Restants Aliens Restants Aliens Restants   :</h2>
+    <span id="alives"></span>
+
+</div>
+<div id="butonDiv">
+    <button><a href="javascript:window.location.reload()"> Restart</a></button>
+</div>
+</div>
+
+<canvas id="aliensCanvas" class="mesCanvas" width="530" height="500">Votre navigateur ne supporte pas les Canvas :(</canvas>
+<audio id="audioPlayer" src="imagess/vara.mp3"></audio>
+<audio id="audioPlayer1" src="imagess/tir.mp3"></audio>
+<script src="JS/fichier.js"></script>
 </body>
 </html>
